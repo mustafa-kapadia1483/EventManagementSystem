@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bulma CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div>
+            <div class="container">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                      <a class="navbar-item" href="">
+                          <strong>Event Management System</strong>
+                      </a>
+
+                      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                      </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+
+                      <div class="navbar-end">
+                        <div class="navbar-item">
+                          <div class="buttons">
+                              <a class="button is-primary" href="./admin.html">
+                              <strong>Log In As Admin</strong>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        
+        <section class="container">
+            <div class="columns is-centered mt-6">
+                <form class="column is-half" method="POST" action="validateUser">
+                    <h1 class="title is-3 has-text-centered">User Log In</h1>
+                      <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="username">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                        </div>
+                      </div>
+                    
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control has-icons-left">
+                          <input class="input" type="password" name="password">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-key"></i>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="control">
+                          <button class="button is-link">Submit</button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
